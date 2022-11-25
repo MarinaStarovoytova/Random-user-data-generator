@@ -75,7 +75,10 @@ const personGenerator = {
               "id_4":"Веб-разработчик",
               "id_5":"Повар",
               "id_6":"Хирург",
-              "id_7":"Каскадёр"
+              "id_7":"Каскадёр",
+              "id_7":"Слесарь",
+              "id_7":"Шахтер",
+              "id_7":"Солдат"
            }
         },
         "forFemale":{
@@ -85,7 +88,11 @@ const personGenerator = {
               "id_2":"Стюардесса",
               "id_3":"Стилист",
               "id_4":"Маркетолог",
-              "id_5":"Фитнес-тренер"
+              "id_5":"Фитнес-тренер",
+              "id_5":"Веб-разработчик",
+              "id_5":"Повар",
+              "id_5":"Хирург",
+              "id_5":"Инженер"
            }
         }
      }`,
@@ -139,7 +146,7 @@ const personGenerator = {
 
     randomDayBirth: function () { // день
         
-        let day = new Date(this.person.birthYear, this.person.monthBirthNumber, 0).getDate();
+        let day = new Date(this.person.birthYear, this.person.monthBirthNumber, 0).getDate();//количество дней в n-году
         return this.randomIntNumber(day,1);
     },
 
